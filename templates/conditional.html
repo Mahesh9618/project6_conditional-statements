@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <center>
+        <!--
+        <h1>condional Statements</h1>
+        {% if a > 100 %}
+            <h2>I am in if block </h2>
+            <h2>{{a}}</h2>
+        {% endif %}
+        --->
+        <!--
+        <h1>if else block</h1>
+        {% if a > b %}
+            <h2>inside if block</h2>
+            <h2>{{a}}</h2>
+         {% else %}
+              <h2>i am inside else</h2>
+              <h2>{{b}}</h2>
+              {% endif %}
+              --->
+<!--
+            <h1>if elif block</h1>
+            {% if a > b and a > c %}
+            <h1>if condition</h1>
+           <h1>{{a}}</h1> 
+            {%  elif b > c %}
+            <h2> elif block</h2>
+            <h2>{{b}}</h2>
+            {% else %}
+            <h3>in else block</h3>
+            <h3>{{c}}</h3>
+            {% endif %}
+-->
+    <h1>nested if block</h1>
+    {% if a > b %}
+         {% if a > c %}
+         <h1>a is min</h1>
+         {% else %}
+         <h1> c is min</h1>
+         {% endif %}
+    {% else %}
+    {% if b > c %}
+    <h1> b is min</h1>
+    {% else %}
+    <h1>c is min</h1>
+    {% endif %}
+    {% endif %}
+    </center>
+</body>
+</html>
